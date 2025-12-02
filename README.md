@@ -48,6 +48,7 @@ Each file corresponds to a specific problem, named with its **problem number + t
 
 There can be multiple valid ways to solve a problem.
 This repository reflects my **personal approaches**, optimization thinking, and learning journey.
+You can use your own approach!
 
 ---
 
