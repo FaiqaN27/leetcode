@@ -10,7 +10,7 @@ public:
             arr[t[i] - 'a']--;
         }
 
-        for(int j=0;j<25;j++){
+        for(int j=0;j<26;j++){
             if(arr[j] != 0){
                 return false;
             }
