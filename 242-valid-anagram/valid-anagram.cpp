@@ -3,9 +3,19 @@ public:
     bool isAnagram(string s, string t) {
         if(s.size() != t.size()) return false;
 
-        sort(s.begin(),s.end());
-        sort(t.begin(),t.end());
+        int arr[26] = {0};
 
-        return s==t;
+        for(int i=0;i<s.size(); i++){
+            arr[s[i] - 'a']++;
+            arr[t[i] - 'a']--;
+        }
+
+        for(int j=0;j<25;j++){
+            if(arr[j] != 0){
+                return false;
+            }
+        }
+
+        return true;
     }
 };
