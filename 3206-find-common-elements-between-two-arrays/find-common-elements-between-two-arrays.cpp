@@ -1,23 +1,23 @@
 class Solution {
 public:
     vector<int> findIntersectionValues(vector<int>& nums1, vector<int>& nums2) {
-        unordered_set<int> set1(nums1.begin(), nums1.end());
-        unordered_set<int> set2(nums2.begin(), nums2.end());
-        int answer1 = 0;
-        int answer2 = 0;
+        unordered_set<int>num1(nums1.begin() , nums1.end());
+        unordered_set<int>num2(nums2.begin() , nums2.end());
+         int ans1 = 0;
+         int ans2 = 0;
 
-        for (int i=0; i<nums1.size(); i++) {
-            if (set2.count(nums1[i])) {
-                answer1++;
+        for(int i=0;i<nums1.size();i++){
+            if(num2.count(nums1[i])){
+                ans1++;
             }
         }
 
-        for (int j=0; j<nums2.size(); j++) {
-            if (set1.count(nums2[j])) {
-                answer2++;
+        for(int i=0;i<nums2.size();i++){
+            if(num1.count(nums2[i])){
+                ans2++;
             }
         }
 
-        return {answer1, answer2};
+        return {ans1,ans2};
     }
 };
