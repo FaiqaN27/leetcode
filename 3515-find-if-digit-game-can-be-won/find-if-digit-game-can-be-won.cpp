@@ -12,6 +12,6 @@ public:
             }
         }
 
-        return sSum > dSum || sSum < dSum;
+        return sSum != dSum;
     }
 };
